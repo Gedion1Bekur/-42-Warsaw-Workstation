@@ -1,0 +1,17 @@
+# Virtual Environment
+.venv/
+
+# Cache directories
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+.idea/
+
+# Tool configuration files
+.flake8
+mypy.ini
+
+# Compiled files & editor backups
+*.pyc
+*~
+.*.swp

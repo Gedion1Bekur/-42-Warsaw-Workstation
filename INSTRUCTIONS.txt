@@ -1,0 +1,47 @@
+================================================================================
+                      42 PISCINE PYTHON - GLOBAL WORKFLOW
+================================================================================
+Location: /home/gbekur/Python_0-5/
+--------------------------------------------------------------------------------
+
+1. CREATE A NEW MODULE
+--------------------------------------------------------------------------------
+From /home/gbekur/Python_0-5, run:
+
+    ./new_module.sh <module_name>
+
+Example:
+    ./new_module.sh Piscine_Python_01
+
+What this does:
+  - Creates the new module folder
+  - Configures .flake8, mypy.ini, .gitignore, and .vscode/settings.json
+  - Creates .venv with flake8 and mypy installed
+
+
+2. OPEN IN VS CODE
+--------------------------------------------------------------------------------
+    code /home/gbekur/Python_0-5/<module_name>
+
+
+3. ACTIVATE THE ENVIRONMENT (Inside your module)
+--------------------------------------------------------------------------------
+    cd /home/gbekur/Python_0-5/<module_name>
+    source .venv/bin/activate
+
+
+4. RUN LINTING & TYPE CHECKS (Inside your module)
+--------------------------------------------------------------------------------
+    flake8 .
+    mypy .
+    flake8 . && mypy .
+
+
+5. CLEAN CACHE GLOBALLY
+--------------------------------------------------------------------------------
+Whenever you want to clean __pycache__, .mypy_cache, .idea, and temporary files
+across all your modules, run from /home/gbekur/Python_0-5:
+
+    ./clean_cache.sh
+
+================================================================================
